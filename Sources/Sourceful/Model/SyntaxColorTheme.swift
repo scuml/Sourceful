@@ -46,6 +46,7 @@ public protocol SyntaxColorTheme {
 	var font: Font { get }
 	
 	var backgroundColor: Color { get }
+    var foregroundColor: Color { get }
 
 	func globalAttributes() -> [NSAttributedString.Key: Any]
 

@@ -9,6 +9,7 @@
 import Foundation
 
 public struct LightDarkCodeTheme: SourceCodeTheme {
+   
     
     public init() {
         
@@ -25,6 +26,7 @@ public struct LightDarkCodeTheme: SourceCodeTheme {
     public let font = Font(name: "Menlo", size: 15)!
     
     public let backgroundColor = Color.init(named: "background")!
+    public let foregroundColor = Color.black
 
     
     public func color(for syntaxColorType: SourceCodeTokenType) -> Color {
