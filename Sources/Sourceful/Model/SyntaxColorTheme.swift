@@ -10,14 +10,14 @@ import Foundation
 import CoreGraphics
 
 public struct LineNumbersStyle {
-	
+    
 	public let font: Font
 	public let textColor: Color
 	
 	public init(font: Font, textColor: Color) {
 		self.font = font
 		self.textColor = textColor
-	}
+    }
 
 }
 
