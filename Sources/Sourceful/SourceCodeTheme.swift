@@ -21,7 +21,7 @@ extension SourceCodeTheme {
 		var attributes = [NSAttributedString.Key: Any]()
 		
 		attributes[.font] = font
-		attributes[.foregroundColor] = Color.black
+		attributes[.foregroundColor] = foregroundColor
 		
 		return attributes
 	}
