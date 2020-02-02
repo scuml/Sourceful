@@ -149,7 +149,11 @@ extension SyntaxTextView {
 			
 			return self.shouldChangeText(insertingText: text)
 		}
-		
+
+        public func textDidBeginEditing(_ notification: Notification) {
+            delegate?.textDidBeginEditing(notification)
+        }
+
         public func textDidEndEditing(_ notification: Notification) {
             delegate?.textDidEndEditing(notification)
         }
