@@ -10,14 +10,14 @@ import Foundation
 import CoreGraphics
 
 public struct LineNumbersStyle {
-	
+    
 	public let font: Font
 	public let textColor: Color
 	
 	public init(font: Font, textColor: Color) {
 		self.font = font
 		self.textColor = textColor
-	}
+    }
 
 }
 
@@ -46,6 +46,7 @@ public protocol SyntaxColorTheme {
 	var font: Font { get }
 	
 	var backgroundColor: Color { get }
+    var foregroundColor: Color { get }
 
 	func globalAttributes() -> [NSAttributedString.Key: Any]
 
