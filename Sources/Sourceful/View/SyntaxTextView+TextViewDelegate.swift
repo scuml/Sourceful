@@ -167,7 +167,7 @@ extension SyntaxTextView {
 			
 		}
 		
-		func didUpdateText() {
+		public func didUpdateText() {
 			
 			self.invalidateCachedTokens()
 			self.textView.invalidateCachedParagraphs()
